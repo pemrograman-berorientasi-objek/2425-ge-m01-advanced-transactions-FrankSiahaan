@@ -26,6 +26,13 @@ public class Driver1 {
         String date;
         String keterangan;
 
+        int tahun;
+        int bulan;
+        int hari;
+        int jam;
+        int menit;
+        int detik;
+
         int i = 1;
         
         while (true) {
@@ -63,6 +70,17 @@ public class Driver1 {
                     amount = 0.0;
                 } else {
                     date = hasil[3];
+                    // String[] tanggal = hasil[3].split(" ");
+                    // String[] tanggal1 = tanggal[0].split("/");
+                    // tahun = Integer.parseInt(tanggal1[0]);
+                    // bulan = Integer.parseInt(tanggal1[1]);
+                    // hari = Integer.parseInt(tanggal1[2]);
+                    
+                    // String[] tanggal2 = tanggal1[3].split(":");
+                    // jam = Integer.parseInt(tanggal2[0]);
+                    // menit = Integer.parseInt(tanggal2[1]);
+                    // detik = Integer.parseInt(tanggal2[2]);
+
                     keterangan = hasil[4];
     
                     for (Account t : account) {
